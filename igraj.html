@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+
+ <h1> <img src = "kino.jpg" width = "800px" height="170px" alt ="kino"></h1>
+ 
+		 <style>
+		 h1{
+		 text-align:center;
+		 }
+		 </style>
+
+
+<p>Sledeca igra pocinje za: <span id = "countdown" class = "timer"></span></p>
+<style>
+p{
+background-color:black;
+color:white;
+font-size:20px;
+padding-top:20px;
+padding-bottom: 20px;
+margin-left:360px;
+			margin-right:360px;
+}
+</style>
+<br>
+<table>
+<tr>
+<td><button onclick = "funkcija(1)">1</button></td>
+<td><button onclick = "funkcija(2)">2</button></td>
+<td><button onclick = "funkcija(3)">3</button></td>
+<td><button onclick = "funkcija(4)">4</button></td>
+<td><button>5</button></td>
+<td><button id = "id6">6</button></td>
+<td><button>7</button></td>
+<td><button>8</button></td>
+<td><button>9</button></td>
+<td><button>10</button></td>
+</tr>
+<tr>
+<td><button>11</button></td>
+<td><button>12</button></td>
+<td><button>13</button></td>
+<td><button>14</button></td>
+<td><button>15</button></td>
+<td><button>16</button></td>
+<td><button id = "id17">17</button></td>
+<td><button>18</button></td>
+<td><button>19</button></td>
+<td><button>20</button></td>
+</tr>
+<tr>
+<td><button>21</button></td>
+<td><button>22</button></td>
+<td><button id = "id23">23</button></td>
+<td><button>24</button></td>
+<td><button>25</button></td>
+<td><button>26</button></td>
+<td><button>27</button></td>
+<td><button>28</button></td>
+<td><button>29</button></td>
+<td><button>30</button></td>
+</tr>
+<tr>
+<td><button>31</button></td>
+<td><button>32</button></td>
+<td><button id = "id33">33</button></td>
+<td><button>34</button></td>
+<td><button>35</button></td>
+<td><button>36</button></td>
+<td><button>37</button></td>
+<td><button>38</button></td>
+<td><button>39</button></td>
+<td><button>40</button></td>
+</tr>
+<tr>
+<td><button>41</button></td>
+<td><button>42</button></td>
+<td><button>43</button></td>
+<td><button>44</button></td>
+<td><button id = "id45">45</button></td>
+<td><button>46</button></td>
+<td><button>47</button></td>
+<td><button>48</button></td>
+<td><button>49</button></td>
+<td><button>50</button></td>
+</tr>
+<tr>
+<td><button>51</button></td>
+<td><button>52</button></td>
+<td><button>53</button></td>
+<td><button>54</button></td>
+<td><button>55</button></td>
+<td><button>56</button></td>
+<td><button>57</button></td>
+<td><button>58</button></td>
+<td><button>59</button></td>
+<td><button id = "id60">60</button></td>
+</tr>
+<tr>
+<td><button>61</button></td>
+<td><button>62</button></td>
+<td><button>63</button></td>
+<td><button>64</button></td>
+<td><button>65</button></td>
+<td><button>66</button></td>
+<td><button>67</button></td>
+<td><button>68</button></td>
+<td><button>69</button></td>
+<td><button>70</button></td>
+</tr>
+<tr>
+<td><button>71</button></td>
+<td><button>72</button></td>
+<td><button>73</button></td>
+<td><button>74</button></td>
+<td><button>75</button></td>
+<td><button>76</button></td>
+<td><button>77</button></td>
+<td><button>78</button></td>
+<td><button>79</button></td>
+<td><button  onclick = "Funkcija(80)" >80</button></td>
+</tr>
+</table>
+<script>
+
+
+
+function Funkcija( number )
+{
+ // TODO
+
+java.Kino2.buttonPress( number ); 
+
+}
+</script>
+<style>
+table{
+	margin-left:360px;
+	margin-right:360px;
+			}
+button{
+width:75px;
+height: 30px;
+background-color:black;
+color:white;
+border-radius:50%;
+}			
+button:hover{
+	transform: scale(2,2);
+}
+
+</style>
+
+
+<script>
+var sec = 300;
+function tajmer(){
+var min = Math.round((sec -30)/60);
+var otkucaj = sec % 60;
+
+if(otkucaj <10){
+otkucaj = "0" + otkucaj;
+}
+document.getElementById("countdown").innerHTML = min + ":" + otkucaj ;
+
+
+if (sec == 0){
+clearInterval(countdownTimer);
+document.getElementById("countdown").innerHTML = "buzz";
+}
+else{
+sec--;
+}
+}
+var countdownTimer = setInterval('tajmer()', 1000);
+
+
+</script>
+
+</body>
+</html>
